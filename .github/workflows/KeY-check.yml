@@ -14,14 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: configure
-      run: ./configure
-      
-    - name: Install dependencies
-      run: make
+    - name: Infos
+      run: java -version
       
     - name: Run check
       run: make check
-      
-    - name: Run distcheck
-      run: make distcheck
