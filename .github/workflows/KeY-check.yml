@@ -19,3 +19,12 @@ jobs:
       
     - name: Run check
       run: make check
+
+    - name: Create Markdown report
+      run: tools/statistics.py > statistics.md
+
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: statistics.md
