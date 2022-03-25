@@ -5,7 +5,8 @@ Java source code with the KeY Theorem Prover. You should use it when
 you are planning a larger case study.
 
 
-Currently this template bundles KeY 2.10.0 and ci-tool 1.4.0.
+Currently this template bundles KeY 2.10.0 and ci-tool 1.4.0. Both are
+licensed under GPL.
 
 
 ## Features and Best Practises
@@ -42,12 +43,14 @@ Currently this template bundles KeY 2.10.0 and ci-tool 1.4.0.
 
 ## Getting Started
 
-To check the provability 
+To check the provability and compilability with:
 
 ```
-$ 
+$ make check
 ``` 
 
+Start the KeY Gui using your `project.key` with
+
 ```
-$ 
+$ make run 
 ``` 
