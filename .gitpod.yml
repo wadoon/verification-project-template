@@ -1,0 +1,9 @@
+
+tasks:
+  - init: make check
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack    
+    - wadoon.jml-vscode
+    
